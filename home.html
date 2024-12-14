@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GenZ Aawara - Your Travel Buddy</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    header {
+      background-color: #0d6efd;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    header nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      background: url('/1500x600') no-repeat center center/cover;
+      color:black;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero .search-bar {
+      margin-top: 20px;
+    }
+
+    .search-bar input {
+      padding: 10px;
+      width: 250px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .search-bar button {
+      padding: 10px 20px;
+      background-color: #0d6efd;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .search-bar button:hover {
+      background-color: #084298;
+    }
+
+    .features {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #f8f9fa;
+    }
+
+    .features h2 {
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
+
+    .features .feature {
+      margin: 20px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0d6efd;
+      color: rgb(6, 0, 0);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">GenZ Aawara</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" style="background-color: black; position: relative; height: 400px;">
+    <img src="kartiksha.jpg.jpg" alt="Travel Inspiration" 
+         style="width: 1200px; height: 400px; object-fit: cover; display: block; margin: auto; border-radius: 20px;">
+    <div class="search-bar" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      <input type="text" placeholder="Where are you traveling to?" id="search-input">
+      <button onclick="searchLocation()">Search</button>
+    </div>
+  </section>
+  
+  
+  
+
+  <section id="features" class="features">
+    <h2>Why Choose Us?</h2>
+    <div class="feature">
+      <h3>let expoire are world</h3>
+      <p>Connect with like-minded travelers to share your journey.</p>
+    </div>
+    <div class="feature">
+      <h3>Budget-Friendly Trips</h3>
+      <p>Split costs and make traveling more affordable.</p>
+    </div>
+    <div class="feature">
+      <h3>Unique Experiences</h3>
+      <p>Discover offbeat destinations and hidden gems.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 GenZ Aawara. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function searchLocation() {
+      const location = document.getElementById("search-input").value;
+      if (location) {
+        alert(`Searching for travel partners in ${location}...`);
+      } else {
+        alert("Please enter a destination!");
+      }
+    }
+  </script>
+</body>
+</html>
